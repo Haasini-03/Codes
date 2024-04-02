@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<body>
+<div class="container">
+    <form action="#" class="form" onsubmit="return validateForm()">
+        <div class="nav">
+            <nav class="pass">Car Rentals Sign Up</nav>
+        </div>
+        <label for="uname">Username:</label>
+        <input type="text" name="uname" id="uname" required>
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" required>
+        <label for="pwd">Password:</label>
+        <input type="password" name="pwd" id="pwd" required>
+        <label for="cpwd">Confirm Password:</label>
+        <input type="password" name="cpwd" id="cpwd" required>
+        <span>Already have an account? <a href="file.html">Book Rental</a></span>
+        <div class="login">
+            <button id="log">Sign up</button>
+        </div>
+    </form>
+</div>
+<script>
+    function validateForm() {
+        var password = document.getElementById('pwd').value;
+        var confirmPassword = document.getElementById('cpwd').value;
+
+        if (password !== confirmPassword) {
+            alert("Passwords do not match!");
+            return false;
+        }
+
+        var email = document.getElementById('email').value;
+        var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+        if (!email.match(emailRegex)) {
+            alert("Please enter a valid email address!");
+            return false;
+        }
+
+        return true;
+    }
+</script>
+</body>
+</html>

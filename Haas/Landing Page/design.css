@@ -1,0 +1,59 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    background-image: url('https://images.unsplash.com/photo-1601929862217-f1bf94503333?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bHV4dXJ5JTIwY2FyfGVufDB8fDB8fHww'); /* Replace 'car-background.jpg' with the path to your background image */
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 500px; /* Reduced max-width */
+    margin: 10px auto; /* Reduced margin */
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px; /* Reduced border-radius */
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2); /* Reduced box-shadow */
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px; /* Reduced margin-bottom */
+}
+
+form {
+    display: grid;
+    grid-gap: 10px; /* Reduced grid-gap */
+}
+
+label {
+    font-weight: bold;
+    color: #555;
+}
+
+input,
+select,
+button {
+    width: calc(100% - 20px); /* Adjusted width */
+    padding: 8px; /* Reduced padding */
+    border: 1px solid #ccc;
+    border-radius: 4px; /* Reduced border-radius */
+    box-sizing: border-box;
+}
+
+input[type="date"] {
+    -webkit-appearance: none;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Added transition */
+}
+
+button:hover {
+    background-color: #0056b3;
+}
